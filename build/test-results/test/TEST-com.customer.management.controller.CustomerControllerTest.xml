@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.customer.management.controller.CustomerControllerTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2025-05-02T15:10:12.015Z" hostname="sfld-rr-rambati.local" time="0.105">
+  <properties/>
+  <testcase name="testGetCustomerById()" classname="com.customer.management.controller.CustomerControllerTest" time="0.075"/>
+  <testcase name="testGetCustomerByName()" classname="com.customer.management.controller.CustomerControllerTest" time="0.003"/>
+  <testcase name="testAddCustomer()" classname="com.customer.management.controller.CustomerControllerTest" time="0.002"/>
+  <testcase name="testGetCustomerById_GoldTier()" classname="com.customer.management.controller.CustomerControllerTest" time="0.002"/>
+  <testcase name="testGetCustomerByEmail()" classname="com.customer.management.controller.CustomerControllerTest" time="0.002"/>
+  <testcase name="testGetCustomerById_PlatinumTier()" classname="com.customer.management.controller.CustomerControllerTest" time="0.002"/>
+  <testcase name="testUpdateCustomer()" classname="com.customer.management.controller.CustomerControllerTest" time="0.002"/>
+  <testcase name="testAddCustomer_GoldTier()" classname="com.customer.management.controller.CustomerControllerTest" time="0.003"/>
+  <testcase name="testAddCustomer_PlatinumTier()" classname="com.customer.management.controller.CustomerControllerTest" time="0.002"/>
+  <testcase name="testAddCustomer_SilverTier()" classname="com.customer.management.controller.CustomerControllerTest" time="0.002"/>
+  <testcase name="testDeleteCustomer()" classname="com.customer.management.controller.CustomerControllerTest" time="0.001"/>
+  <testcase name="testGetCustomerById_SilverTier()" classname="com.customer.management.controller.CustomerControllerTest" time="0.001"/>
+  <system-out><![CDATA[2025-05-02T11:10:12.080-04:00  INFO 59018 --- [px-customermanagement-service] [    Test worker] c.c.m.controller.CustomerController      : START get : getCustomerById 1
+2025-05-02T11:10:12.082-04:00  INFO 59018 --- [px-customermanagement-service] [    Test worker] c.c.m.controller.CustomerController      : END get : response com.customer.management.model.CustomerResponse@74f1e112
+2025-05-02T11:10:12.095-04:00  INFO 59018 --- [px-customermanagement-service] [    Test worker] c.c.m.controller.CustomerController      : START get : getCustomerByName John Doe
+2025-05-02T11:10:12.095-04:00  INFO 59018 --- [px-customermanagement-service] [    Test worker] c.c.m.controller.CustomerController      : END get : response com.customer.management.model.CustomerResponse@652cb87d
+2025-05-02T11:10:12.098-04:00  INFO 59018 --- [px-customermanagement-service] [    Test worker] c.c.m.controller.CustomerController      : Creating customer for CustomerAddRequest : com.customer.management.model.CustomerRequest@68b59e2f
+2025-05-02T11:10:12.098-04:00  INFO 59018 --- [px-customermanagement-service] [    Test worker] c.c.m.controller.CustomerController      : END get : response com.customer.management.model.CustomerResponse@685a3c14
+2025-05-02T11:10:12.101-04:00  INFO 59018 --- [px-customermanagement-service] [    Test worker] c.c.m.controller.CustomerController      : START get : getCustomerById 1
+2025-05-02T11:10:12.101-04:00  INFO 59018 --- [px-customermanagement-service] [    Test worker] c.c.m.controller.CustomerController      : END get : response com.customer.management.model.CustomerResponse@f7a19c4
+2025-05-02T11:10:12.103-04:00  INFO 59018 --- [px-customermanagement-service] [    Test worker] c.c.m.controller.CustomerController      : START get : getCustomerById john.doe@example.com
+2025-05-02T11:10:12.103-04:00  INFO 59018 --- [px-customermanagement-service] [    Test worker] c.c.m.controller.CustomerController      : END get : response com.customer.management.model.CustomerResponse@323fa578
+2025-05-02T11:10:12.105-04:00  INFO 59018 --- [px-customermanagement-service] [    Test worker] c.c.m.controller.CustomerController      : START get : getCustomerById 1
+2025-05-02T11:10:12.106-04:00  INFO 59018 --- [px-customermanagement-service] [    Test worker] c.c.m.controller.CustomerController      : END get : response com.customer.management.model.CustomerResponse@79dd79eb
+2025-05-02T11:10:12.108-04:00  INFO 59018 --- [px-customermanagement-service] [    Test worker] c.c.m.controller.CustomerController      : Updating customer with ID: 1
+2025-05-02T11:10:12.108-04:00  INFO 59018 --- [px-customermanagement-service] [    Test worker] c.c.m.controller.CustomerController      : END get : response com.customer.management.model.CustomerResponse@502a9b30
+2025-05-02T11:10:12.111-04:00  INFO 59018 --- [px-customermanagement-service] [    Test worker] c.c.m.controller.CustomerController      : Creating customer for CustomerAddRequest : com.customer.management.model.CustomerRequest@6970687e
+2025-05-02T11:10:12.111-04:00  INFO 59018 --- [px-customermanagement-service] [    Test worker] c.c.m.controller.CustomerController      : END get : response com.customer.management.model.CustomerResponse@a6f34f5
+2025-05-02T11:10:12.114-04:00  INFO 59018 --- [px-customermanagement-service] [    Test worker] c.c.m.controller.CustomerController      : Creating customer for CustomerAddRequest : com.customer.management.model.CustomerRequest@5bc150e9
+2025-05-02T11:10:12.114-04:00  INFO 59018 --- [px-customermanagement-service] [    Test worker] c.c.m.controller.CustomerController      : END get : response com.customer.management.model.CustomerResponse@28fa0ff8
+2025-05-02T11:10:12.116-04:00  INFO 59018 --- [px-customermanagement-service] [    Test worker] c.c.m.controller.CustomerController      : Creating customer for CustomerAddRequest : com.customer.management.model.CustomerRequest@557ed49a
+2025-05-02T11:10:12.117-04:00  INFO 59018 --- [px-customermanagement-service] [    Test worker] c.c.m.controller.CustomerController      : END get : response com.customer.management.model.CustomerResponse@2d839402
+2025-05-02T11:10:12.118-04:00  INFO 59018 --- [px-customermanagement-service] [    Test worker] c.c.m.controller.CustomerController      : START get : deleteCustomer 1
+2025-05-02T11:10:12.119-04:00  INFO 59018 --- [px-customermanagement-service] [    Test worker] c.c.m.controller.CustomerController      : END get : response com.customer.management.model.CustomerResponse@4723445c
+2025-05-02T11:10:12.120-04:00  INFO 59018 --- [px-customermanagement-service] [    Test worker] c.c.m.controller.CustomerController      : START get : getCustomerById 1
+2025-05-02T11:10:12.121-04:00  INFO 59018 --- [px-customermanagement-service] [    Test worker] c.c.m.controller.CustomerController      : END get : response com.customer.management.model.CustomerResponse@ab5c335
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
